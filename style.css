@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+.max_width{
+   max-width: 1300px;
+   padding: 0 80px;
+   margin: auto;
+}
+
+/* Navbar Styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    background-color: #222;
+    background-image: radial-gradient(rgba(252, 9, 9, 0.308),rgb(7, 7, 7));;
+}
+
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span{
+    color: brown;
+    transition: all 0.3s ease;
+
+}
+
+
+
+/* App logo rotation */
+.App-logo{
+    animation: App-logo-rotation 2s infinite linear;
+    height: 300px;
+    position: fixed;
+    align-self: auto;
+    margin-left: 400px;
+    z-index: 20;
+    opacity: 0.3;
+    
+}
+
+.App-logo {
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+/* Home Section Styling */
+.home{
+    display: flex;
+    background: url(/images/v748-toon-131.jpg) no-repeat center;
+    height: 50vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 27px;
+}
+
+.home .home-content .text-3{
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-4{
+    font-size: 27px;
+}
+
+/* Similar Style Coding */
+section{
+    padding: 100px 0;
+}
