@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temporary App</title>
     <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+
 </head>
 <body>
     
@@ -13,11 +15,17 @@
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Viz<span>ally</span></a></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
     <!-- Home Section -->
-    <section class="home">
+    <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <img src="/images/logo.svg" class="App-logo">
@@ -34,17 +42,74 @@
 
     <!-- About Section -->
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="max-width">
             <div class="title">About Us</div>
             <div class="about-content">
-                <div class="text"><p>We provide a wide range of services including web applications with ReactJs
+                 <div class="text">We provide a wide range of services including web applications with ReactJs
                     & android & IOS / Hybrid applications with React Native, we also use Redux
-                     for state management and consulting.</p>
-           </div>
+                     for state management and consulting.   
+                     
+                     <p><br><br>We offer customer-oriented services, delivering creative and effective results. We have extensive experience in creating 
+                         useful online web presences for a wide range of businesses, 
+                         organizations, and communities.</p> 
+            </div>
             </div>
         </div>
     </section>
+
+
+    <!-- Services Section -->
+
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">What We Do</h2>
+            <div class="serv-content">
+                 <div class="text">We specialize in building custom web solutions 
+                     that are easy to manage, well-supported, smartphone friendly, and make search engines happy.</div>
+                     <hr class="line">
+                     <div class="Pictures">
+
+                         <div class="do">
+                         <div class="circle">
+                             <img src="/images/webDevelopment.png" class="circleImg">
+                         </div>
+                         <p>
+                            <p class="head">Website Applications</p>
+                            <div class="head_text">Vizally Solutions can help you create
+                            <br /> a professional web presence
+                            <br /> customized to your business needs.</div>
+                          </p>
+                     </div>
+
+                     <div class="do">
+                        <div class="circle">
+                            <img src="/images/webDevelopment.png" class="circleImg">
+                        </div>
+                        <p>
+                           <p class="head">Android Applications</p>
+                           <div class="head_text"> We can make for you a android application to be
+                           <br /> truly fluid, flexible, and adaptive—no matter
+                           <br /> what screen's dimenssion device has</div>
+                         </p>
+                    </div>
+
+                    <div class="do">
+                        <div class="circle">
+                            <img src="/images/webDevelopment.png" class="circleImg">
+                        </div>
+                        <p>
+                           <p class="head">IOS Applications</p>
+                           <div class="head_text"><p>We can make for you a IOS application to be
+                           <br /> truly fluid, flexible, and adaptive—no matter
+                           <br /> what screen's dimenssion device has</p></div>
+                         </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
 
 
 
