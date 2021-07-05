@@ -46,13 +46,26 @@ html{
 
 }
 
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;   
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
 
 
 /* App logo rotation */
 .App-logo{
     animation: App-logo-rotation 2s infinite linear;
     height: 300px;
-    position: fixed;
+    position: absolute;
     align-self: auto;
     margin-left: 400px;
     z-index: 20;
@@ -112,3 +125,134 @@ html{
 section{
     padding: 100px 0;
 }
+
+.about, .services{
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content,
+ .services .serv-content,
+ .contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 5px; */
+}
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+/* About section styling */
+
+.about{
+    background: lightcyan;
+}
+
+
+.about .about-content{
+    display: flex;
+    min-height: 150px;
+    /* max-height: auto; */
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about .about-content .text{
+    font-size: 17px;
+    font-weight: 550;
+    /* margin-bottom: 10px; */
+    text-align: center;
+}
+
+.about .about-content .text p{
+    font-size: 17px;
+    font-weight: 300;
+    /* margin-bottom: 10px; */
+}
+
+/* Services section styling */
+.services .title{
+    font-weight: 600;
+}
+
+.services .serv-content{
+    display: flex;
+    min-height: 150px;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .serv-content .text{
+    font-size: 17px;
+    text-align: center;
+}
+
+.services .serv-content .line{
+    height: 5px;
+    background-color: rgb(53, 65, 73);
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.services .serv-content .head{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.head_text{
+    font-size: 15px;
+}
+
+
+
+.services .serv-content .circle{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width:200px;
+    height:200px;
+    border-radius: 1000px;
+    overflow: hidden;
+    /* height: auto; */
+    background-color: rgba(43, 57, 66, 0.2);
+  }
+
+.services .serv-content .do{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .services .serv-content .circleImg{
+    max-width:170px;
+    max-height:170px;
+    width: auto;
+    height: auto;
+  }
+  
+  
+  .services .serv-content .Pictures{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
